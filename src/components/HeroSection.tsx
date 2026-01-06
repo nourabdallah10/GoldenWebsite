@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
-import { textReveal, scaleOnHover } from '../utils/animations'
+import { textReveal } from '../utils/animations'
 import { useLocalization } from '../contexts/LocalizationContext'
 
 const HeroSection = () => {

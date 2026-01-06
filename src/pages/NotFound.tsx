@@ -5,8 +5,7 @@ import { useLocalization } from '../contexts/LocalizationContext'
 import SEO from '../components/SEO'
 
 const NotFound = () => {
-  const { language, t } = useLocalization()
-  const isHebrew = language === 'he'
+  const { t } = useLocalization()
 
   // Animated furniture illustration using CSS
   return (

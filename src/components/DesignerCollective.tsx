@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Quote } from 'lucide-react'
-import { scrollRevealLeft, textRevealStagger, textReveal, floating } from '../utils/animations'
+import { scrollRevealLeft, textRevealStagger, textReveal } from '../utils/animations'
 import { useLocalization } from '../contexts/LocalizationContext'
 
 interface Testimonial {

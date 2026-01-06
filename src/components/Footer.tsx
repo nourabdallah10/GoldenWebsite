@@ -6,7 +6,7 @@ import {
   Phone,
   MapPin,
 } from 'lucide-react'
-import { floating, scaleOnHover, textReveal } from '../utils/animations'
+import { floating } from '../utils/animations'
 import { useLocalization } from '../contexts/LocalizationContext'
 import { formatPhone, formatAddress } from '../utils/formatting'
 import ImageLoader from './ImageLoader'

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Cookie } from 'lucide-react'
+import { Cookie } from 'lucide-react'
 import { useLocalization } from '../contexts/LocalizationContext'
 
 const CookieConsent = () => {

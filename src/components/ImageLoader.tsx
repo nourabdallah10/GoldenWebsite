@@ -41,13 +41,8 @@ const ImageLoader = ({
       return originalSrc
     }
     
-    // Check if WebP is supported
-    const canvas = document.createElement('canvas')
-    const isWebPSupported = canvas.toDataURL('image/webp').indexOf('data:image/webp') === 0
-    
     // For development, return original. In production, you'd use a CDN or image service
     // that converts to WebP automatically (e.g., Cloudinary, Imgix, etc.)
-    // Example: return isWebPSupported ? originalSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp') : originalSrc
     return originalSrc
   }
 
@@ -166,23 +161,27 @@ const ImageLoader = ({
 
         {/* Actual Image */}
         {imageSrc && !hasError && (
-          <motion.img
-            ref={imgRef}
+          <motion.div
             key="image"
-            src={imageSrc}
-            srcSet={srcSet}
-            sizes={sizes}
-            alt={alt}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             className="w-full h-full"
-            style={{
-              objectFit,
-            }}
-            {...props}
-          />
+          >
+            <img
+              ref={imgRef}
+              src={imageSrc}
+              srcSet={srcSet}
+              sizes={sizes}
+              alt={alt}
+              className="w-full h-full"
+              style={{
+                objectFit,
+              }}
+              {...props}
+            />
+          </motion.div>
         )}
 
         {/* Error Fallback */}

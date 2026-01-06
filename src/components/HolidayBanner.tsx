@@ -32,7 +32,7 @@ const holidays: Holiday[] = [
 ]
 
 const HolidayBanner = () => {
-  const { language, t } = useLocalization()
+  const { language } = useLocalization()
   const [currentHoliday, setCurrentHoliday] = useState<Holiday | null>(null)
   const [isVisible, setIsVisible] = useState(true)
 
