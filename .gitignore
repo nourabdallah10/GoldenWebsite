@@ -18,10 +18,7 @@ dist-ssr
 .env.production
 .env.development
 
-# Optimized images
-public/Images
-
-# Note: Keep /Images at root - it will be copied to public/Images and dist/Images during build
+# Note: /Images at root is the source, and public/Images is included for GitHub Pages deployment
 
 # Editor directories and files
 .vscode/*
