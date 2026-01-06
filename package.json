@@ -1,0 +1,46 @@
+{
+  "name": "golden-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:optimized",
+    "build:optimized": "tsc && vite build && npm run copy:assets && npm run generate:sitemap",
+    "build:production": "npm run optimize:images && npm run build:optimized",
+    "copy:assets": "node scripts/copy-assets.js",
+    "generate:sitemap": "node scripts/generate-sitemap.js",
+    "optimize:images": "node scripts/optimize-images.js",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "analyze": "vite build --mode analyze"
+  },
+  "dependencies": {
+    "classnames": "^2.3.2",
+    "framer-motion": "^10.16.4",
+    "lucide-react": "^0.294.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "postcss": "^8.4.31",
+    "sharp": "^0.32.6",
+    "tailwindcss": "^3.3.5",
+    "terser": "^5.24.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pwa": "^0.17.4"
+  }
+}

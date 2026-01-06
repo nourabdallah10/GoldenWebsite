@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.goldenfurniture.com/sitemap.xml
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /private/
+
+# Allow important pages
+Allow: /
+Allow: /sofas
+Allow: /beds
+Allow: /tables
+
+# Crawl delay (optional)
+Crawl-delay: 1
+
+
+
+
+
+
+
