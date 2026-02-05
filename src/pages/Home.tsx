@@ -1,6 +1,5 @@
 import HeroSection from '../components/HeroSection'
 import CategoryIcons from '../components/CategoryIcons'
-import CategoriesGrid from '../components/CategoriesGrid'
 import DesignerCollective from '../components/DesignerCollective'
 import GoldenFurnitureServices from '../components/GoldenFurnitureServices'
 import BestSellerSofas from '../components/BestSellerSofas'
@@ -20,13 +19,12 @@ function Home() {
     <div className="min-h-screen">
       <HeroSection />
       <CategoryIcons />
-      <CategoriesGrid />
-      <DesignerCollective />
-      <GoldenFurnitureServices />
       <BestSellerSofas />
       <SectionDivider />
       <BestSellerBeds />
       <AboutUsFeatures />
+      <DesignerCollective />
+      <GoldenFurnitureServices />
     </div>
     </>
   )
